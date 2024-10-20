@@ -1,0 +1,119 @@
+.login-main-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+background-color: #4c00ff;
+}
+
+.login-container {
+background-color: #ffffff;
+width: 400px;
+height: 500px;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 5px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+color: #4c00ff;
+margin-top: 0;
+font-size: 30px;
+font-weight: bold;
+}
+
+.login-form {
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.login-form-group {
+margin-bottom: 20px;
+}
+
+.login-form-group label {
+margin-bottom: 5px;
+color: #4c00ff;
+font-size: 14px;
+}
+
+.login-form-group input {
+padding: 10px;
+border: none;
+border-bottom: 2px solid #ccc;
+border-radius: 0;
+background-color: transparent;
+transition: border-color 0.3s ease;
+color: #000000;
+font-size: 16px;
+width: 80%;
+margin: 0 auto;
+display: block;
+}
+
+.login-form-group input:focus {
+border-bottom: 2px solid #4c00ff;
+outline: none;
+}
+
+.login-button {
+padding: 10px;
+background-color: #4c00ff;
+color: #ffffff;
+border: none; 
+border-radius: 20px; 
+cursor: pointer;
+font-size: 16px;
+width: 80%; 
+margin: 10px auto 0; 
+display: block; 
+transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.login-button:hover {
+background-color: #3700b3;
+transform: scale(1.05);
+}
+
+
+.register-link {
+margin-top: 20px;
+color: #4c00ff;
+text-decoration: none;
+font-size: 14px;
+transition: color 0.3s ease;
+}
+
+.register-link:hover {
+color: #000000; 
+}
+
+.back-to-home {
+text-decoration: none;
+color: #4c00ff;
+font-size: 15px;
+font-weight: bold;
+padding: 8px 10px;
+border-radius: 20px;
+background-color: rgba(236, 236, 236, 0.89);
+display: inline-block;
+margin-top: 10px;
+transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-home:hover {
+background-color: #3620a3; 
+color: white;
+transform: scale(1.04);
+}
+
+.back-to-home:active {
+background-color: #2d1983;
+transform: scale(0.95);
+}

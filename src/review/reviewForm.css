@@ -1,0 +1,119 @@
+.full-screen-background {
+margin: 0;
+padding: 0;
+width: 100vw;
+height: 100vh;
+background-color: #4c00ff;
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.review-form-container {
+max-width: 450px;
+margin: 0 auto;
+padding: 40px;
+background-color: #ffffff;
+border-radius: 20px;
+box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-form-container:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.review-form-container h2 {
+text-align: center;
+color: #4c00ff;
+font-size: 28px;
+margin-bottom: 30px;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 1.2px;
+}
+
+.review-form-container label {
+color: #4c00ff;
+font-size: 14px;
+margin-bottom: 8px;
+display: block;
+text-align: left;
+width: 100%;
+font-weight: 500;
+}
+
+.review-form-container input[type="number"],
+.review-form-container textarea {
+width: 100%;
+padding: 12px;
+margin-bottom: 25px;
+border: none;
+border-bottom: 2px solid #ccc;
+background-color: transparent;
+color: #000;
+font-size: 16px;
+transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-form-container input[type="number"]:focus,
+.review-form-container textarea:focus {
+border-bottom: 2px solid #4c00ff;
+outline: none;
+box-shadow: 0 2px 6px rgba(76, 0, 255, 0.3);
+}
+
+.review-form-container button {
+width: 100%;
+padding: 15px;
+background-color: #4c00ff;
+color: white;
+border: none;
+border-radius: 30px;
+cursor: pointer;
+font-size: 16px;
+margin-top: 20px;
+transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.review-form-container button:hover {
+background-color: #3700b3;
+transform: scale(1.05);
+}
+
+.review-form-container button:active {
+background-color: #2d1983;
+transform: scale(0.95);
+}
+
+.review-form-container .message {
+color: red; 
+font-weight: bold;
+margin-top: 10px;
+}
+
+
+.review-form-container .message.success {
+color: green;
+}
+
+@media (max-width: 600px) {
+.review-form-container {
+    padding: 30px;
+}
+
+.review-form-container h2 {
+    font-size: 24px;
+}
+
+.review-form-container button {
+    padding: 12px;
+}
+}
+

@@ -1,0 +1,146 @@
+.full-screen-background {
+margin: 0;
+padding: 0;
+width: 100vw;
+height: 100vh;
+background-color: #4c00ff;
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.book-form-container {
+max-width: 450px;
+margin: 0 auto;
+padding: 40px;
+background-color: #ffffff;
+border-radius: 20px;
+box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-form-container:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.book-form-container h2 {
+text-align: center;
+color: #4c00ff;
+font-size: 28px;
+margin-bottom: 30px;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 1.2px;
+}
+
+.book-form-container label {
+color: #4c00ff;
+font-size: 14px;
+margin-bottom: 8px;
+display: block;
+text-align: left;
+width: 100%;
+font-weight: 500;
+}
+
+.book-form-container input {
+width: 100%;
+padding: 12px;
+margin-bottom: 25px;
+border: none;
+border-bottom: 2px solid #ccc;
+background-color: transparent;
+color: #000;
+font-size: 16px;
+transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-form-container input:focus {
+border-bottom: 2px solid #4c00ff;
+outline: none;
+box-shadow: 0 2px 6px rgba(76, 0, 255, 0.3);
+}
+
+.book-form-container button {
+width: 100%;
+padding: 15px;
+background-color: #4c00ff;
+color: white;
+border: none;
+border-radius: 30px;
+cursor: pointer;
+font-size: 16px;
+margin-top: 20px;
+transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.book-form-container button:hover {
+background-color: #3700b3;
+transform: scale(1.05);
+}
+
+.book-form-container button:active {
+background-color: #2d1983;
+transform: scale(0.95);
+}
+
+.book-form-container .back-to-home {
+text-decoration: none;
+color: #4c00ff;
+font-size: 16px;
+font-weight: bold;
+padding: 10px 15px;
+border-radius: 25px;
+background-color: rgba(236, 236, 236, 0.89);
+display: inline-block;
+margin-top: 20px;
+transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.book-form-container .back-to-home:hover {
+background-color: #3620a3;
+color: white;
+transform: scale(1.04);
+}
+
+.book-form-container .back-to-home:active {
+background-color: #2d1983;
+transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+.book-form-container {
+    padding: 30px;
+}
+
+.book-form-container h2 {
+    font-size: 24px;
+}
+
+.book-form-container button {
+    padding: 12px;
+}
+}
+
+select {
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+border: 2px solid #4c00ff;
+border-radius: 4px;
+font-size: 16px;
+color: #333;
+background-color: #f9f9f9;
+transition: border-color 0.3s;
+}
+
+select:focus {
+border-color: #333;
+outline: none;
+}
